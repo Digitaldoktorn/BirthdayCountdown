@@ -71,10 +71,10 @@ function displayCountdown() {
     var secsLeft = Math.floor(secs % 60);
 
     var myBox = document.getElementById("my_box");
-    myBox.innerHTML = "<h3>Countdown to " + eventName + " (" + eventDate.toLocaleDateString() + ")<h2>" + daysLeft + " days, " + hoursLeft + " hours, " + minsLeft + " minutes, " + secsLeft + " seconds<br><br><p><small> equals to:</small></p>";
+    myBox.innerHTML = "<h3>Countdown to " + eventName + " (" + eventDate.toLocaleDateString() + ")<h2>" + daysLeft + " days, " + hoursLeft + " hours,<br> " + minsLeft + " minutes, " + secsLeft + " seconds<br><br><p><small> equals to:</small></p>";
     
 
     var myBox2 = document.getElementById("my_box2");
-    myBox2.innerHTML = "<h2>" + years.toFixed(2) + " years<br><br><p><small> or:</small><h2>" + months.toFixed(2) + " months";
+    myBox2.innerHTML = "<h2>" + years.toFixed(2) + " years<br><p><small> or:</small><h2>" + months.toFixed(2) + " months<br><br><p>HAPPY BIRTHDAY IN ADVANCE!";
 
 }
